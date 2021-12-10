@@ -10,16 +10,19 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApp1
 {
-    public partial class ManiForm : Form
+    public partial class MainForm : Form
     {
-        public ManiForm()
+        private List<string> source = new List<string> { "lok", "mlo", "klop", "loc", "alo", "look", "lamp", "lov", "lop", "aslo", "sdtg", "bslo", "dslo" };
+
+
+    public MainForm()
         {
             InitializeComponent();
         }
 
         private void ManiForm_Load(object sender, EventArgs e)
         {
-            stringlstBx.DataSource = new List<string> { "lok", "mlo", "klop", "loc", "alo", "look", "lamp", "lov", "lop", "aslo", "sdtg", "bslo", "dslo" };
+            stringlstBx.DataSource = source;
         }
     }
 }
